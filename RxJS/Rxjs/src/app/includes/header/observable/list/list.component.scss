@@ -1,0 +1,30 @@
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 15px; /* Space between items */
+
+}
+
+
+ul.list a{
+    border: 2px solid #477698;
+    background-color: #e3f2fd;
+    padding: 50px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#477698;
+
+}
+
+
+ul.list li a:hover{
+    background: #e3f2fd;
+    color: #477698;
+    box-shadow: 0 0 60px #b3cada inset;
+    text-decoration: none;
+}

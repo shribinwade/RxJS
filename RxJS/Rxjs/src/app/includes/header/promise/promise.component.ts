@@ -9,48 +9,48 @@ export class PromiseComponent implements OnInit {
 
   proVal:any;
 
-  DellAvailable() {
-    return true;
-  }
-  HpAvailable() {
-    return false;
-  }
+  // DellAvailable() {
+  //   return true;
+  // }
+  // HpAvailable() {
+  //   return false;
+  // }
 
   ngOnInit(): void {
     //  let buyLaptop = new Promise(function( resolve, reject){
     //      resolve('Promise is resolved');
     //  });
 
-    let buyLaptop = new Promise((resolve, reject) => {
+    // let buyLaptop = new Promise((resolve, reject) => {
       // resolve('Promise is resolved');
 
-      // reject('rejected')
-      if (this.DellAvailable()) {
-        return setTimeout(() => {
-          resolve('Dell is Purchased')
-        }, 3000)
-      } else if (this.HpAvailable()) {
-        return setTimeout(() => {
-          resolve('HP is Purchased')
-        }, 3000)
-      } else {
-        return setTimeout(() => {
-          reject('Not purchesed');
-        }, 3000)
+      // // reject('rejected')
+      // if (this.DellAvailable()) {
+      //   return setTimeout(() => {
+      //     resolve('Dell is Purchased')
+      //   }, 3000)
+      // } else if (this.HpAvailable()) {
+      //   return setTimeout(() => {
+      //     resolve('HP is Purchased')
+      //   }, 3000)
+      // } else {
+      //   return setTimeout(() => {
+      //     reject('Not purchesed');
+      //   }, 3000)
 
-      }
-    });
+      // }
+    // });
 
-    buyLaptop.then(res => {
-      console.log('Success');
-      this.proVal = res;
-      console.log(res);
+    // buyLaptop.then(res => {
+    //   console.log('Success');
+    //   this.proVal = res;
+    //   console.log(res);
 
-    }).catch(res => {
-      console.log(res);
-      this.proVal = res;
+    // }).catch(res => {
+    //   console.log(res);
+    //   this.proVal = res;
 
-    })
+    // })
   }
 
   myFunction() {
